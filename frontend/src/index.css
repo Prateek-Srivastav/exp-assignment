@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --main-theme-color: #00899b;
+  --secondary-theme-color: #0093a7;
+  --ternary-theme-color: #00a1b6;
+  --secondary-bg-color: #f9f9f9;
+  --light-bg-blue: #d6f7f7;
+  --bluish-grey-color: #698f94;
+  --green-whatsapp: #25d366;
+  --green-whatsapp-hover: #20cc5f;
+  --light-blue: #51ebff;
+  --white-color: #ffffff;
+}

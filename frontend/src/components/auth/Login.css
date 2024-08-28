@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
+
+.loginPage-left {
+  margin-top: 8rem;
+}
+.loginPage-left .register-here {
+  font-size: 20px;
+  text-align: center;
+}
+.loginPage-left .register-here a {
+  color: #00a1b6;
+  font-weight: 400;
+}
+.loginPage-left p {
+  font-size: 17px;
+  color: #868686;
+  text-align: center;
+}
+.loginPage-left img {
+  width: 500px;
+}
+.loginPage-right {
+  background-image: url("../../assets/loginBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 1px 50px 0px #4f4f4f33;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form .form-heading {
+  text-align: center;
+}
+.form form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form form label {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.form form label input[type="email"],
+input[type="text"],
+[type="message"],
+[type="password"] {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.error-box {
+  font-size: 15px;
+  color: red;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.error {
+  border: 1px solid red;
+}
+
+/* ____________ */
+.dislodged-border {
+  background: #00a1b6;
+  color: #fff;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 7px 20px;
+  position: relative;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dislodged-border:hover {
+  cursor: pointer;
+  z-index: 2;
+  background: #00899b;
+}
+.dislodged-border:before {
+  border: 2px solid #00a1b6;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 4px;
+  left: 4px;
+  z-index: 0;
+}
+.dislodged-border:before:hover {
+  background: #00899b;
+  border: 2px solid #00899b;
+}
+
+.with-google {
+  border: 1px solid rgb(164, 181, 183);
+  border-radius: 2px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.with-google img {
+  width: 20px;
+}
+.with-google:hover {
+  cursor: pointer;
+  background-color: rgb(239, 252, 255);
+}
+
+/* POPUP PAGE CSS STARTS */
+.popupPage {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popupPage .popup {
+  border-radius: 20px;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 3.5rem 3rem;
+  background-color: #ffffff;
+  box-shadow: 3px 0px 50px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popupPage .close {
+  margin-left: auto;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.popupPage .close:hover {
+  cursor: pointer;
+}
+.popup p {
+  text-align: center;
+}
+.popupPage .user-email {
+  width: fit-content;
+  font-size: 30px;
+  text-align: center;
+}
+.popupPage .user-email span {
+  color: #00899b;
+}
+
+#otp input[type="text"] {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  outline-color: #00899b;
+  text-align: center;
+}
+.otp-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.clear-btn {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.clear-btn:hover {
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  text-transform: capitalize;
+}
+.resend-otp {
+  color: #00899b;
+  align-items: center;
+  vertical-align: middle;
+}
+/* POPUP PAGE CSS ENDS */
+
+/* ____________ */
+
+@media only screen and (max-width: 1050px) {
+  .loginPage-left img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .loginPage-left img {
+    width: 300px;
+  }
+  .form {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  .form form label {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .loginPage-left {
+    margin-top: 2rem;
+    order: 2;
+  }
+
+  .loginPage-left img {
+    width: 300px;
+  }
+  .loginPage-right {
+    justify-content: center;
+    padding: 2rem 0;
+    order: 1;
+  }
+
+  .form {
+    width: 85%;
+  }
+  .form form label {
+    width: 100%;
+  }
+  .error-box {
+    width: 100%;
+  }
+  .popupPage .popup {
+    width: 95%;
+    height: fit-content;
+    padding: 2rem;
+  }
+  .popupPage .user-email {
+    font-size: 20px;
+  }
+  .popupPage .user-email span {
+    color: #00899b;
+  }
+}

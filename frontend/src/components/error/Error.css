@@ -1,0 +1,31 @@
+.error-page{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.button-curved{
+    background-color: #00A1B6;
+    padding: 10px 25px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button-curved:hover{
+    background-color: #00899B;
+   cursor: pointer;
+}
+
+@media only screen and (max-width:800px){
+    .error-page img{
+        width: 70%;
+        }
+}
+@media only screen and (max-width:500px){
+    .error-page img{
+        width: 90%;
+        }
+}

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.search_result {
+  position: absolute;
+  top: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1rem;
+  width: 40vw;
+  height: fit-content;
+  min-height: 20vh;
+  background-color: #fff;
+  z-index: 4;
+  border-radius: 10px;
+}
+
+.searched_image {
+  width: 40px;
+  height: fit-content;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #00899b;
+}
+.nav-logo img {
+  width: 100px;
+}
+
+.nav-logo span {
+  margin-top: 0.5rem;
+}
+
+nav .nav-searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.145);
+  padding: 5px 15px;
+  color: #464949;
+  border-radius: 30px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+nav .nav-searchBar .search-icon {
+  color: rgb(192, 192, 192);
+}
+
+input[type="search"] {
+  outline: none;
+  border: none;
+}
+
+nav .search-bar {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 7px 15px;
+  color: #464949;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav .nav-searchBar:active {
+  outline: none;
+}
+
+nav .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-menu .nav-menu-item {
+  color: #464949;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav .nav-menu .nav-menu-item:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #c1dcdc32;
+}
+.nav-btns {
+  display: none;
+  color: #464949;
+}
+.nav-btns:hover {
+  cursor: pointer;
+}
+.nav_info {
+  font-size: small;
+  padding: 0 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.nav_info .whatsapp_link_contact,
+.email_contact {
+  color: #464949;
+  text-decoration: none;
+}
+.nav_info .whatsapp_link_contact:hover {
+  color: #00899b;
+}
+.nav_info .email_contact:hover {
+  color: #00899b;
+}
+.instagram_link,
+.linkedin_link {
+  color: #464949;
+}
+.instagram_link:hover {
+  color: #e20dc6;
+}
+.linkedin_link:hover {
+  color: #0a97e3;
+}
+@media (max-width: 1000px) {
+  .nav-btns {
+    display: block;
+  }
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: -100vh;
+    transition: all 0s ease-in-out;
+  }
+
+  .nav-menu.expanded {
+    background-color: #fff;
+    box-shadow: 0px 3px 4px 0px #e4e4e438;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    width: 100%;
+    min-height: 30vh;
+    height: fit-content;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .nav-menu .nav-menu-item {
+    flex-direction: row;
+    padding: 5px;
+  }
+  nav .nav-menu .nav-menu-item span {
+    margin: 5px;
+  }
+  .search_result {
+    width: 85vw;
+    left: 7.5vw;
+  }
+}
+@media (max-width: 700px) {
+  .search_result {
+    width: 95vw;
+    left: 2.5vw;
+  }
+
+  nav {
+    padding: 0 0.5rem;
+  }
+  .nav_info {
+    padding: 0 0.5rem;
+  }
+  .nav-logo img {
+    width: 20px;
+  }
+  .nav-logo {
+    font-size: 20px;
+  }
+  .nav-searchBar .search-bar {
+    width: 150px;
+  }
+  nav .nav-searchBar {
+    width: 150px;
+    padding: 0;
+  }
+  .search-icon {
+    display: none;
+  }
+}
