@@ -12,7 +12,9 @@ const PidInput = () => {
   const submitHandler = async () => {
     setLoading(true);
     const res = await axios
-      .get(`http://localhost:8000/api/products/getBookDetails/${pid}`)
+      .get(
+        `https://exp-assignment-backend.onrender.com/api/products/getBookDetails/${pid}`
+      )
       .catch((error) => {
         if (error.response) {
           // The request was made and the server responded with a status code

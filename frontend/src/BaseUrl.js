@@ -1,3 +1,3 @@
-const baseUrl = "http://localhost:8000/api";
+const baseUrl = "https://exp-assignment-backend.onrender.com/api";
 
 export { baseUrl };
